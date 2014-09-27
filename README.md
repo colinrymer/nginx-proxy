@@ -26,4 +26,4 @@ If your container exposes multiple ports, nginx-proxy will default to the servic
 If you need to support multipe virtual hosts for a container, you can separate each enty with commas.  For example, `foo.bar.com,baz.bar.com,bar.com` and each host will be setup the same.
 
 ### Websockets
-If you want to use websockets, use the path `/wsapp/`
+If you want to use websockets, set the `NGINX_WEBSOCKETS_PATH`, which will configure nginx to use the path `/<NGINX_WEBSOCKETS_PATH>/`
